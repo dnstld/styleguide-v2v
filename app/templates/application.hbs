@@ -1,3 +1,19 @@
-<div class="app">
-  <h1>Hello world</h1>
-</div>
+{{#burger-menu as |burger|}}
+  {{#burger.menu itemTagName="li" as |menu|}}
+    <button {{action burger.state.actions.close}}>Close</button>
+
+    <ul>
+      {{#menu.item}}
+        {{link-to "Página inicial" "index"}}
+      {{/menu.item}}
+    </ul>
+  {{/burger.menu}}
+
+  {{#burger.outlet}}
+    <div class="app">
+      <button {{action burger.state.actions.toggle}}>Menu</button>
+
+      {{outlet}}
+    </div>
+  {{/burger.outlet}}
+{{/burger-menu}}

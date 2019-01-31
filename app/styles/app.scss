@@ -1,6 +1,14 @@
-@import 'base/normalize';
-@import 'base/fonts';
-@import 'base/colors';
-@import 'base/unclassed';
+// addons
+@import "ember-burger-menu";
 
-@import 'layout/structure';
+// base
+@import "base/normalize";
+@import "base/fonts";
+@import "base/colors";
+@import "base/unclassed";
+
+// addons
+@import "addons/ember-burger-menu";
+
+// layout
+@import "layout/structure";
