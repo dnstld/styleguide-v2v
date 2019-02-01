@@ -30,6 +30,12 @@
     box-sizing: border-box;
     overflow-y: auto;
 
+    > .content {
+      display: grid;
+      grid-auto-rows: minmax(min-content, max-content);
+      grid-row-gap: 1.5rem;
+    }
+
     > .footer {
       grid-row-start: 2;
       grid-row-end: 3;

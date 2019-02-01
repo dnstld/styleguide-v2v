@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('colors');
+  this.route('typography');
 });
 
 export default Router;
