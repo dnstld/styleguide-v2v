@@ -11,9 +11,22 @@
 
   {{#burger.outlet}}
     <div class="app">
-      <button {{action burger.state.actions.toggle}}>Menu</button>
+      <header class="header">
+        <button {{action burger.state.actions.toggle}} class="btnmenu">Menu</button>
+        <img src="assets/images/logo-v2v.png" alt="Logo V2V" class="logo">
+      </header>
 
-      {{outlet}}
+      <main class="main">
+        <div class="content">
+          {{outlet}}
+        </div>
+
+        <footer class="footer">
+          <small>
+            &copy; Todos os direitos reservados - V2V.net
+          </small>
+        </footer>
+      </main>
     </div>
   {{/burger.outlet}}
 {{/burger-menu}}

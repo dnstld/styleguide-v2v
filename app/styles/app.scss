@@ -7,8 +7,12 @@
 @import "base/colors";
 @import "base/unclassed";
 
+// utils
+@import "utils/mixins";
+
 // addons
 @import "addons/ember-burger-menu";
 
-// layout
-@import "layout/structure";
+// root
+@import "application";
+@import "index";

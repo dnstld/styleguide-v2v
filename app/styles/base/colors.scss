@@ -1,3 +1,18 @@
-$color-primary: #703CC5;
-$color-secondary: #FC7266;
+// grey palette
+$grey-darkest: #4b4a4a !default;
+$grey-darker: #666 !default;
+$grey-dark: #999 !default;
+$grey-light: #c8c8cd !default;
+$grey-lighter: #eaebeb !default;
+$grey-lightest: #f2f2f2 !default;
+
+// static colors
+$color-success: #6AA530 !default;
+$color-warning: #E9C83F !default;
+$color-danger: #E02D03 !default;
+$color-info: #17a2b8 !default;
+
+// main colors
 $color-text: #333;
+$color-primary: #000;
+$color-secondary: #084A8D;
