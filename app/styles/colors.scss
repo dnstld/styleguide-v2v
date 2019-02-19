@@ -1,0 +1,63 @@
+.colors {
+  display: grid;
+  grid-row-gap: 1.5rem;
+
+  > .palette {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include for-tablet-portrait-up {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include for-tablet-landscape-up {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    > .color {
+      display: grid;
+      grid-template-rows: auto 5rem auto;
+      border: 1px solid $grey-lighter;
+      border-radius: .25rem;
+      color: $grey-darker;
+
+      > .info {
+        padding: .5rem;
+        font-size: 0.889rem;
+        
+        &.-name {
+          font-weight: 700;
+        }
+      }
+      // main colors
+      > .primary {
+        background-color: $color-primary;
+      }
+      > .secondary {
+        background-color: $color-secondary;
+      }
+      > .text {
+        background-color: $color-text;
+      }
+      // grey palete
+      > .lighter {
+        background-color: $grey-lighter;
+      }
+      > .lightest {
+        background-color: $grey-lightest;
+      }
+      > .light {
+        background-color: $grey-light;
+      }
+      > .dark {
+        background-color: $grey-dark;
+      }
+      > .darker {
+        background-color: $grey-darker;
+      }
+      > .darkest {
+        background-color: $grey-darkest;
+      }
+    }
+  }
+}
