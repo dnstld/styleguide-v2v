@@ -1,0 +1,58 @@
+.v2v-btn {
+  display: inline-block;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: inherit;
+  vertical-align: middle;
+  letter-spacing: normal;
+  padding: 6px 12px;
+  margin: 0;
+  user-select: none;
+  outline: none;
+  box-shadow: none;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: visible;
+  -webkit-appearance: button;
+  margin: .5rem;
+
+  &-sm {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+  &-lg {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+  &-expanded {
+    width: 100%;
+    display: block;
+  }
+  &-primary {
+    background-color: $color-primary;
+    color: #fff;
+    border-color: $color-primary;
+  }
+  &-secondary {
+    background-color: $color-secondary;
+    color: #fff;
+    border-color: $color-secondary;
+  }
+  
+  &-outline-primary {
+    background-color: #fff;
+    color: $color-primary;
+    border-color: $grey-lighter;
+  }
+  &-outline-secondary {
+    background-color: #fff;
+    color: $color-secondary;
+    border-color: $grey-lighter;
+  }
+}

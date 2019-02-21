@@ -24,8 +24,10 @@
     overflow-y: auto;
 
     > .main {
+      box-sizing: border-box;
       display: grid;
       grid-auto-rows: minmax(min-content, max-content);
+      grid-template-columns: 100%;
       grid-row-gap: 3rem;
       width: 100%;
       max-width: 1200px;
