@@ -1,5 +1,9 @@
 .v2v-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 0;
   line-height: 1.5;
   border: 1px solid transparent;
   border-radius: 10px;
@@ -19,41 +23,106 @@
   white-space: nowrap;
   cursor: pointer;
   overflow: visible;
-  -webkit-appearance: button;
-  margin: .5rem;
 
+  &-rounded {
+    padding: 0;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+  }
+  &-xs {
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 4px;
+
+    &-rounded {
+      font-size: 8px;
+      padding: 0;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+    }
+  }
   &-sm {
     font-size: 14px;
     padding: 4px 8px;
     border-radius: 6px;
+
+    &-rounded {
+      font-size: 10px;
+      padding: 0;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &-md {
+    font-size: 18px;
+    padding: 8px 16px;
+
+    &-rounded {
+      font-size: 12px;
+      padding: 0;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+    }
   }
   &-lg {
     font-size: 18px;
-    padding: 8px 16px;
-  }
-  &-expanded {
-    width: 100%;
-    display: block;
+    padding: 12px 20px;
+
+    &-rounded {
+      font-size: 12px;
+      padding: 0;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+    }
   }
   &-primary {
     background-color: $color-primary;
     color: #fff;
     border-color: $color-primary;
+
+    &:hover {
+      color: #fff;
+    }
   }
   &-secondary {
     background-color: $color-secondary;
     color: #fff;
     border-color: $color-secondary;
+
+    &:hover {
+      color: #fff;
+    }
   }
-  
+  &-grey-dark {
+    background-color: $grey-dark;
+    color: #fff;
+    border-color: $grey-dark;
+
+    &:hover {
+      color: #fff;
+    }
+  }
   &-outline-primary {
     background-color: #fff;
     color: $color-primary;
     border-color: $grey-lighter;
+
+    &:hover {
+      color: $color-primary;
+    }
   }
   &-outline-secondary {
     background-color: #fff;
     color: $color-secondary;
     border-color: $grey-lighter;
+
+    &:hover {
+      color: $color-secondary;
+    }
   }
 }
