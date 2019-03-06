@@ -1,0 +1,48 @@
+.C--section-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 0;
+  border-bottom: 1px solid $color-text;
+  color: $color-text;
+  padding-bottom: .5rem;
+  font-size: $font-size-default;
+  font-weight: 700;
+
+  @media print {
+    border-bottom-color: #000;
+    color: #000;
+  }
+
+  > .title {
+    line-height: 120%;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  &-primary {
+    color: $color-primary;
+    border-bottom-color: $color-primary;
+  }
+  &-secondary {
+    color: $color-secondary;
+    border-bottom-color: $color-secondary;
+  }
+  &-font-thin {
+    font-weight: 300;
+  }
+  &-font-lg {
+    font-size: $font-size-huge-x;
+  }
+  &-text-center {
+    justify-content: center;
+  }
+  &-border-lg {
+    border-bottom-width: 3px;
+  }
+  &-truncate {
+    > .title {
+      @include truncate;
+    }
+  }
+}

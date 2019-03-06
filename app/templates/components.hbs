@@ -1,0 +1,56 @@
+<SectionTitle
+  @text="Componentes"
+  @themes="primary font-thin font-lg"
+/>
+
+<section class="components_section-title">
+  <h2>Section Title</h2>
+
+  <div class="title">
+    {{code-snippet name="components_section-title-border-lg.hbs"}}
+
+    <SectionTitle
+      @text="Exemplo 1"
+      @themes="primary text-center border-lg"
+    />
+
+    <SectionTitle
+      @text="Exemplo 2"
+      @themes="secondary text-center border-lg"
+    />
+  </div>
+
+  <div class="title">
+    {{code-snippet name="components_section-title-thin.hbs"}}
+
+    <SectionTitle
+      @text="Exemplo 3"
+      @themes="primary font-thin font-lg"
+    />
+
+    <SectionTitle
+      @text="Exemplo 4"
+      @themes="secondary font-thin font-lg"
+    />
+  </div>
+
+  <div class="title">
+    {{code-snippet name="components_section-title-truncate.hbs"}}
+
+    <SectionTitle
+      @text="Exemplo 5 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      @themes="primary font-thin font-lg truncate"
+    />
+  </div>
+
+  <div class="title">
+    {{code-snippet name="components_section-title-extra.hbs"}}
+
+    <SectionTitle
+      @text="Exemplo 6"
+      @themes="primary font-thin font-lg truncate"
+    >
+      <span class="components_extra">Extra</span>
+    </SectionTitle>
+  </div>
+</section>

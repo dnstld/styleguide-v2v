@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('colors');
   this.route('typography');
   this.route('buttons');
+  this.route('components');
 });
 
 export default Router;

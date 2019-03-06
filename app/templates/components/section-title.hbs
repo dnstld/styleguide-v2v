@@ -1,0 +1,12 @@
+<header 
+  class={{apply-themes "C--section-title" @themes}}
+  ...attributes
+>
+  <h1 class="title" data-test-section-title="h1">{{text}}</h1>
+
+  {{#if hasBlock}}
+    <div class="extra" data-test-section-title="extra">
+      {{yield}}
+    </div>
+  {{/if}}
+</header>
